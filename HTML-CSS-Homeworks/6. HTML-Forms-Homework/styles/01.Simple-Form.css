@@ -1,0 +1,111 @@
+section {
+    background-color: #eeeeee;
+    width: 800px;
+    height: 360px;
+    font-family: Calibri, sans-serif;
+    color: #5d5d5d;
+}
+
+form {
+    width: 330px;
+    height: 280px;
+    vertical-align: top;
+    border: none;
+}
+
+input {
+    display: inline;
+    width: 310px;
+    height: 35px;
+    margin: 5px;
+    padding-left: 5px;
+    margin-left: 15px;
+}
+
+input[type=submit] {
+    width: 130px;
+}
+
+legend {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+div {
+    display: inline-block;
+    width: 350px;   
+    margin-bottom: 20px;
+    vertical-align: top;   
+}
+
+div:first-of-type {
+    width: 500px;
+}
+
+div:last-of-type {
+    height: 262px;
+    background-color: #234465;
+    color: white;
+}
+
+h1 {
+    font-size: 21px;
+    color: #234465;
+    margin-bottom: 10px;    
+}
+
+div>span {
+   font-size: 13px;
+   margin-left: 15px;
+}
+
+label {
+    display: inline-block;
+    padding-left: 5px;
+    vertical-align: top;    
+}
+
+label[for=remember] {
+    margin-top: 10px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+}
+
+div:last-of-type input[type=submit] {
+    background-color: #234465;
+    color: white;
+    vertical-align: top;
+    float: right;
+    border: 2px solid #e3910d;
+    cursor: pointer;
+}
+
+div:last-of-type input[type=submit]:hover {
+    background-color: #e3910d;
+    color: #234465;
+    cursor: pointer;
+}
+
+div:nth-of-type(2) input[type=submit] {
+    background-color: inherit;
+    color: #234465;
+    vertical-align: top;
+    float: right;
+    border: 2px solid #234465;    
+}
+
+div:nth-of-type(2) input[type=submit]:hover {
+    background-color: #234465;
+    color: white;
+    cursor: pointer;
+}
+
+
+a {
+    color: inherit;
+    float: right;
+    margin-right: 5px;
+}
+

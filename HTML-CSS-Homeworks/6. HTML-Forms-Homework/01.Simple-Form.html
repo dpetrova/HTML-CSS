@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+    <link href="styles/01.Simple-Form.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+       <div>
+       <h1>Enter the system</h1>
+       <span>It is necessary to login in Your account in order to sign in for a course.</span>
+       </div>
+        <div>
+           <form method="post" action="apply-now.php">
+               <legend>ARE YOU NEW?<label for="new-user">REGISTER</label></legend>            
+            <input type="text" id="new-user" name="userName" value="" placeholder="User name" required="required" />
+            <input type="email" name="email" value="" title="The valid format is:'sample@email.com'" placeholder="Email" pattern="[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}" autocomplete="on" required="required" />
+            <input type="password" name="password" value="" placeholder="Password" pattern="^(?=[^\d_].*?\d)\w(\w|[!@#$%]){6,20}" required="required" />
+            <input type="password" name="conf-password" value="" placeholder="Confirm Password" required="required" />
+            <input type="submit" value="Register" />
+        </form>
+        </div>
+        <div>
+        <form method="post">
+            <legend>ALREADY A STUDENT?<label for="exist-user">LOGIN</label></legend>            
+            <input type="text" id="exist-user" name="userName" value="" placeholder="User name" required="required" />
+            <input type="password" name="password" value="" placeholder="Password" required="required" />            
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember me?</label>           
+            <input type="submit" value="Login" />
+            <span><a href="#">Forgot Password</a></span>            
+        </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,30 @@
+form>img {
+    width: 300px;
+    height: 100px;
+}
+
+div>img {
+    width: 30px;
+    height: 30px;    
+}
+
+form {
+    width: 330px;
+    height: 200px;
+    display: inline;
+}
+
+label {
+    display: inline-block;    
+}
+
+ input[type=submit] {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      color: rgba(255, 255, 255, 0);
+      background-image: url('../images/wordpress-icon-392.png');
+      border: 0;
+      border-radius: 50%;
+      cursor: pointer;
+ }

@@ -1,0 +1,125 @@
+div {
+    width: 900px;
+    height: 580px;
+    font: normal 12px Tahoma;
+    color: white;
+    background-color: #3b5997;
+}
+
+fieldset {
+    width: 325px;    
+    display: inline;
+    vertical-align: top;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+fieldset:first-of-type {
+    height: 206px;    
+}
+
+fieldset:last-of-type {
+    width: 485px;    
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 90px;
+    text-align: center;
+}
+
+h1>span {
+    font-size: 20px;
+    margin: 5px;
+}
+
+div>p:first-of-type {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+div>p:last-of-type {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 4px;
+}
+
+fieldset>span {
+    display: block;
+}
+
+label[for=radioBt] {
+    display: inline-block;
+}
+
+input {
+    border-radius: 5px;
+    margin: 3px;
+}
+
+fieldset>input[type=text]:nth-of-type(4), fieldset>input[type=text]:nth-of-type(5), fieldset>input[type=text]:nth-of-type(6) {
+    width: 70px;
+}
+
+input[type=date] {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+input[type=radio] {
+    display: inline;
+}
+
+input[type=color] {
+    width: 150px;
+    border: none;
+}
+
+select {
+    width: 153px;
+    height: 23px;
+    margin: 3px;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+textarea {
+    width: 480px;
+    height: 50px;
+    border-radius: 5px;
+    font: normal 12px Tahoma;
+    color: rgba(0, 0, 0, 0.6);    
+}
+
+input[type=submit] {
+    position: absolute;
+}
+
+input[type=reset] {
+    position: absolute;
+    left: 16px;
+    top: 560px;
+    width: 350px;
+    height: 40px;
+    color: #3b5997;
+}
+
+input[type=submit] {
+    position: absolute;
+    left: 391px;
+    top: 560px;
+    width: 504px;
+    height: 40px;
+    color: #3b5997;
+}

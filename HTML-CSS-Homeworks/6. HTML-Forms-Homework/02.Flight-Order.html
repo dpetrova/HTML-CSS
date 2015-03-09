@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Order</title>
+    <link href="styles/02.Flight-Order.css" rel="stylesheet">
+</head>
+<body>
+    <h1>FLIGTH ORDER</h1>
+       <form method="post" action="apply-now.php">
+       <fieldset>
+        <label>From</label>
+        <select name="city" id="city">
+            <option value="" selected="selected">enter a city</option> 
+            <option value="sf">Sofia</option>
+            <option value="ld">London</option>
+            <option value="rm">Rome</option>
+            <option value="bn">Berlin</option>
+            <option value="pr">Paris</option>
+        </select>        
+        <label for="date">Departure Date</label>
+        <input name="date" type="date" id="dateNow" />       
+        <label for="date">Return Date</label>
+        <input name="date" type="date" id="date" />        <div>
+        <label>12+</label>
+        <label>2-12</label>
+        <label>0-2</label>
+        <input type="number" min="0" max="100" />    
+        <input type="number" min="0" max="100" />    
+        <input type="number" min="0" max="100" />        </div>
+    </fieldset>
+    <fieldset>
+        <label for="city2">To</label>
+            <select name="city" id="city2">
+                <option value="" selected="selected">enter a city</option> 
+                <option value="sf">Sofia</option>
+                <option value="ld">London</option>
+                <option value="rm">Rome</option>
+                <option value="bn">Berlin</option>
+                <option value="pr">Paris</option>
+        </select>
+        <input type="checkbox" id="direct" /><label for="direct">Prefer directs</label>
+        <label>Time Interval</label>
+        <input name="start-time" type="time" />
+        <input name="end-time" type="time" />
+        <label>Time Interval</label>
+        <input name="start-time" type="time" />
+        <input name="end-time" type="time" />
+        <label>Choose class</label>
+        <select name="class" id="class">
+            <option value="economy" selected="selected">Economy</option> 
+            <option value="first">First</option>
+            <option value="business">Business</option>            
+        </select>
+        <input type="submit" value="Search" />
+        </fieldset>
+    </form> 
+ </body>
+</html>

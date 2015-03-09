@@ -1,0 +1,10 @@
+section {
+    width: 800px;
+    vertical-align: top;
+    margin-left: 50px;
+    font-family: sans-serif;
+}
+
+article {
+    margin-bottom: 50px;
+}

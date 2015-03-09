@@ -1,0 +1,19 @@
+.list-roman-numerals{
+    list-style-type: upper-roman;
+}
+
+.list-lowercase-letters{
+    list-style-type: lower-alpha;
+}
+
+.list-numerals-disc{
+    list-style-type: disc;
+}
+
+.list-numerals-circle{
+     list-style-type: circle;
+ }
+
+.list-numerals-square{
+    list-style-type: square;
+}

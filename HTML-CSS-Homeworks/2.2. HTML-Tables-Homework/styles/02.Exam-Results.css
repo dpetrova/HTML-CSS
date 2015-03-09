@@ -1,0 +1,22 @@
+body {
+    font-family:Tahoma;
+}
+
+table {
+    width: 400px;
+}
+
+table, table th, table td {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+table tfoot td {
+    text-align: right;
+}
+
+ table th, table td {
+    padding:5px;
+}
+

@@ -1,0 +1,43 @@
+main, section, h2 {
+    margin:0;
+    padding: 0;
+}
+
+main {
+    width: 630px;
+    height: 330px;
+    background-color: black;
+    border-radius: 20px;
+    font-family: Calibri;
+    font-size: 20px;
+    color: white;
+}
+
+iframe {
+    margin-left: 20px;    
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+}
+
+#ref {
+    width: 300px;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}

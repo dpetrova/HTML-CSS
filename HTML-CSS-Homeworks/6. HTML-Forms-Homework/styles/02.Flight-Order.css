@@ -1,0 +1,77 @@
+
+form {
+    background-color: #ffc0cb;
+    width: 470px;
+    height: 300px;
+    font: italic 14px Tahoma;    
+}
+
+fieldset {
+    width: 200px;
+    height: 280px;
+    border: none;
+    display: inline;
+    vertical-align: top;
+}
+
+h1 {
+    width: 460px;
+    background-color: #ffc0cb;
+    font: italic bold 25px Tahoma;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+input {
+    width: 190px;
+    height: 25px;    
+}
+
+label[for=date]:first-of-type {
+    margin-top: 34px;
+}
+
+select {
+    width: 195px;
+    height: 27px;
+    margin-bottom: 5px;
+}
+
+div>label {
+    display: inline;
+    width: 63px;
+    float: left;
+    padding-left: 3px;
+}
+
+input[type=number] {
+    width: 60px;    
+}
+
+label {
+    display: block;
+    margin-top: 5px
+}
+
+input[type=time] {
+    width: 90px;
+    height: 25px;
+}
+
+label[for=direct] {
+    width: 100px;
+    display: inline;
+    vertical-align: top;
+    margin: 5px;    
+}
+
+input[type=checkbox] {
+    width: 20px;
+    margin-top: 0;
+}
+
+input[type=submit] {
+    width: 195px;
+    height: 27px;
+}

@@ -1,0 +1,211 @@
+body {
+    background-color: #6698ff;
+    font-size: 12px;
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 55%;    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#wrapper > header {
+     font-size: 1.2em;
+}
+
+#wrapper > header > h1 {
+    color: white;   
+}
+
+#wrapper > header > h1 span {
+    display: inline-block;    
+}
+
+#wrapper > header > nav {
+     text-align: right;
+}
+
+#wrapper header nav:before {
+     height: 2px;
+     background: #000;
+     content: "";
+     display: block;
+     position: relative;
+     top: 30px;
+     z-index: -1;
+}
+
+#wrapper > header > nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid black;
+    background-color: white;
+    padding: 3px 10px;
+    margin-right: 5px;
+}
+
+#wrapper >section {
+    width: 77%;
+    float: left;
+}
+
+#wrapper >section>article {
+    background-color: #e0eafe;
+    border: 1px solid black;
+    margin: 5px 0;
+}
+
+#wrapper >section>article div {
+     margin: 0 0 10px 5px;
+}
+
+#wrapper >section>article header {
+    font-size: 1.1em;
+    margin: 0 0 10px 5px;
+}
+
+#wrapper > aside {
+    width: 20%;
+    float: right;
+    background-color: #e0eafe;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 5px;  
+}
+
+#wrapper > aside ul {
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper > aside ul li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+#wrapper > footer {
+    width: 100%;  
+    float: left;
+    background-color: #e0eafe;
+    height: 30px;
+    font-size: 0.8em;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 10px;
+}
+
+#wrapper > footer a {
+    text-decoration: underline;    
+}
+
+
+@media only screen and (max-width: 960px) and (min-width: 780px) {
+    #wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 780px) and (min-width: 640px) {
+    #wrapper {
+        width: 100%;
+        font-size: 0.8em;
+    }
+    
+    h1 {
+        font-size: 1rem;
+    }
+    
+    #wrapper>header>h1 {
+        font-size: 1.3rem;
+        text-align: center;
+     }
+    
+    #wrapper > section {
+        width: 100%;
+    }
+    
+    #wrapper > aside {
+    width: 98.5%;
+    float: left;   
+    margin: 5px 0;     
+    }
+         
+    #wrapper > aside ul {
+        width: 100%;
+    }
+
+    #wrapper > aside ul li {
+        padding: 5px;
+        display: inline-block;
+        width: 23%;
+        vertical-align: text-top;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #wrapper, #wrapper>section {
+        width: 100%;
+        font-size: 0.7em;
+        clear: both;
+    }
+    
+    h1 {
+        font-size: 0.9rem;
+    }
+    
+    #wrapper>header>h1 {
+        font-size: 1.3rem;
+        text-align: center;
+     }
+    
+    img {
+        width: 50%;
+    }
+    
+    #wrapper>header>h1 span {
+        width: 50%;
+        font-size: 1.3rem;
+        text-align: center;
+     }
+    
+     #wrapper>header>nav {
+         width: 100%;       
+     }
+    
+    #wrapper>header>nav> ul {
+       width: 90%;
+        margin-left: -20px;
+    }
+    
+    #wrapper>header>nav> ul li {
+        width: 90%;       
+        text-align: center;        
+     }
+    
+    #wrapper > aside {
+        width: 97%;
+        float: left;   
+        margin: 5px 0;     
+    }
+         
+    #wrapper > aside ul li {
+        padding: 5px;
+        display: block;
+        width: 90%;
+        vertical-align: text-top;
+        text-align: center;
+    }
+    
+}

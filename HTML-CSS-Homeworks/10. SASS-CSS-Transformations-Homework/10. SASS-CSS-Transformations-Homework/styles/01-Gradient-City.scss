@@ -1,0 +1,293 @@
+$grey-light: #bfbfbf;
+$grey-dark: #808080;
+$grey: #bebebe;
+$purple-light: #fbecfb;
+$purple-dark: #3f133f;
+$blue-light: #ececfe;
+$blue-dark: #1313b5;
+$green-light: #ecfbec;
+$green-dark: #133f13;
+$yellow-light: #ffffdc;
+$yellow-dark: #f5f500;
+$orange-light: #ffffe1;
+$orange-dark: #ed9913;
+$red-light: #ffe7e7;
+$red-dark: #d11313;
+
+@mixin default-element-style {
+    border: 2px solid $grey;
+    padding: 10px;
+    margin: 5px;
+    font: normal 12px Arial;
+    text-align: center;
+    color: $grey;
+}
+
+@mixin default-innerDivs-style {
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+@mixin linear-gradient($first-color, $second-color, $direction) {
+    background: -moz-linear-gradient($direction, $first-color 0%, $second-color 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient($direction, $first-color 0%,$second-color 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient($direction, $first-color 0%,$second-color 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient($direction, $first-color 0%,$second-color 100%); /* IE10+ */
+}
+
+@mixin radial-gradient($first-color, $second-color) {
+    background: -moz-radial-gradient(center, ellipse cover, $first-color 0%, $second-color 100%); /* FF3.6+ */
+    background: -webkit-radial-gradient(center, ellipse cover, $first-color 0%,$second-color 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, $first-color 0%,$second-color 100%); /* Opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, $first-color 0%,$second-color 100%); /* IE10+ */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 600px;
+    @include linear-gradient($grey-dark, white, top);
+        
+    #wrapper {
+        margin: 0 auto;
+        width: 500px;       
+        background-color: white;
+        @include default-element-style;
+        
+        header {
+           @include default-element-style;
+            
+            h1 {
+                font-size: 20px;
+                color: $grey-dark;
+                margin: 0;
+            }
+            
+            nav {
+                               
+                ul {
+                                       
+                    li {
+                        display: inline-block;
+                        margin: 20px;
+                        width: 70px;
+                        vertical-align: middle;
+                        @include default-element-style;
+                        
+                        &:hover {
+                             @include linear-gradient($grey-dark, white, top);
+                             color: white;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+        
+        .linear {
+             @include default-element-style;
+            
+            h1 {
+                text-decoration: underline;
+                font-size: 13px;
+            }
+            
+            header {
+                border: none;
+                
+                h2 {
+                    font-size: 12px;
+                }
+            }
+                
+                article:nth-of-type(1) {
+                     @include default-element-style;
+                     border-width: 1px;
+                    
+                    h2 {
+                        font-size: 12px;
+                        margin: 0;
+                    }
+                    
+                    .innerContainer {
+                        
+                        .purple {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($purple-dark, $purple-light, top);
+                        }
+                        .blue {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($blue-dark, $blue-light, top);
+                        }
+                        .green {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($green-dark, $green-light, top);
+                        }
+                        .yellow {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($yellow-dark, $yellow-light, top);
+                        }
+                        .orange {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($orange-dark, $orange-light, top);
+                        }
+                        .red {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($red-dark, $red-light, top);
+                        }
+                    }
+                    
+                }
+            
+                article:nth-of-type(2) {
+                     @include default-element-style;
+                     border-width: 1px;
+                    
+                     h2 {
+                        font-size: 12px;
+                        margin: 0;
+                     }
+                    
+                    .innerContainer {
+                        .purple {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($purple-dark, $purple-light, left);
+                        }
+                        .blue {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($blue-dark, $blue-light, left);
+                        }
+                        .green {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($green-dark, $green-light, left);
+                        }
+                        .yellow {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($yellow-dark, $yellow-light, left);
+                        }
+                        .orange {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($orange-dark, $orange-light, left);
+                        }
+                        .red {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($red-dark, $red-light, left);
+                        }
+                    }
+                }
+            
+                 article:nth-of-type(3) {
+                      @include default-element-style;
+                      border-width: 1px;
+                     
+                      h2 {
+                        font-size: 12px;
+                        margin: 0;
+                     }
+                     
+                    .innerContainer {
+                        .purple {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($purple-dark, $purple-light, -45deg);
+                        }
+                        .blue {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($blue-dark, $blue-light, -45deg);
+                        }
+                        .green {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($green-dark, $green-light, -45deg);
+                        }
+                        .yellow {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($yellow-dark, $yellow-light, -45deg);
+                        }
+                        .orange {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($orange-dark, $orange-light, -45deg);
+                        }
+                        .red {
+                            @include default-innerDivs-style;
+                            @include linear-gradient($red-dark, $red-light, -45deg);
+                        }
+                    }
+                }
+            
+            }
+        
+           section.radial {
+                 @include default-element-style;
+               
+               header {
+                   border: none;
+                   
+                   h1 {
+                        text-decoration: underline;
+                        font-size: 13px;                   
+                    }
+               }
+                            
+               article {
+                                 
+                .innerContainer {
+                     @include default-element-style;
+                     border-width: 1px;
+                    
+                    .purple {
+                            @include default-innerDivs-style;
+                            @include radial-gradient($purple-dark, $purple-light);
+                        }
+                        .blue {
+                            @include default-innerDivs-style;
+                            @include radial-gradient($blue-dark, $blue-light);
+                        }
+                        .green {
+                            @include default-innerDivs-style;
+                            @include radial-gradient($green-dark, $green-light);
+                        }
+                        .yellow {
+                            @include default-innerDivs-style;
+                            @include radial-gradient($yellow-dark, $yellow-light);
+                        }
+                        .orange {
+                            @include default-innerDivs-style;
+                            @include radial-gradient($orange-dark, $orange-light);
+                        }
+                        .red {
+                            @include default-innerDivs-style;
+                            @include radial-gradient($red-dark, $red-light);
+                        }
+                }
+            }
+           }
+        
+            footer {
+                 @include default-element-style;
+                
+                h3 {
+                    text-decoration: underline;
+                    font-size: 13px;
+                }
+                
+                ul {                       
+                    text-align: center;
+                  
+                    
+                    li {
+                        list-style-type: none;
+                        text-align: center;
+                    }
+                }
+            }
+        
+        }
+    }

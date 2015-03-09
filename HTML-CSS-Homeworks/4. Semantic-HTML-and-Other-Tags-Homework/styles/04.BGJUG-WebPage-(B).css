@@ -1,0 +1,115 @@
+header, nav, aside, footer, article {
+    margin: 0;
+    padding: 0;
+}
+
+aside, section, article {
+    display: inline-block;
+}
+
+header {
+    background:url(../images/star-wars-the-force-awakens-toys-toy-fair-2015.jpeg);
+    background-repeat: repeat;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: Stencil;
+    color: white;   
+}
+
+img {
+    width: 150px;
+    height: 100px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    display: inline;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 320px;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+form {
+    display: inline;
+    width: 250px;
+}
+
+nav {
+    margin-left: 150px;
+    padding: 10px;
+}
+
+section {
+    width: 800px;
+    vertical-align: top;
+    margin-left: 50px;
+    font-family: sans-serif;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+aside {
+    width: 300px;
+    height: 430px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-family: Stencil;
+    font-size: 15px
+}
+
+aside ul li:nth-child(1):before {
+    content: url("../images/dv.png");    
+}
+
+aside ul li:nth-child(2):before {
+    content: url("../images/cl.png");
+}
+
+aside ul li:nth-child(3):before {
+    content: url("../images/ds.png");
+}
+
+aside ul li:nth-child(4):before {
+    content: url("../images/r2.png");
+}
+
+aside ul li:nth-child(5):before {
+    content: url("../images/yd.png");
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside ul li {
+    padding: 10px;
+}
+
+.clearfix li {
+    display: inline;
+    margin: 80px;
+}
+
+footer {
+    background:url(../images/star-wars-the-force-awakens-toys-toy-fair-2015.jpeg);
+    background-repeat: repeat;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    text-align:center;
+    color: white;
+    padding-top: 5px;
+}
+

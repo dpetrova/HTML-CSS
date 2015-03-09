@@ -1,0 +1,61 @@
+main, section, figure, h1, h4 {
+    margin:0;
+    padding: 0;
+}
+
+main {
+    width: 990px;
+    height: 390px;
+    background-color: #9e96d2;
+    border-radius: 20px;
+    font-family: Calibri;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+h4 {
+    text-align: center;    
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+figure {
+    width: 250px;
+}
+
+meter {
+    width:150px;
+}
+
+section {
+   display:inline-block;
+}
+
+#fig {
+    width: 250px;    
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+}
+
+#audio {
+    width:250px;
+    height: 250px;
+    margin-left: 40px;
+    margin-right: 40px;
+    vertical-align: top;
+}
+
+#video {
+    width:250px;
+    height: 250px;
+    margin-left: 40px;    
+}

@@ -1,0 +1,64 @@
+table{
+    font-size: 18px;
+    font-family: Tahoma;
+}
+
+th {
+    font-size: 40px;
+}
+
+table, th, td{
+    border: solid 1px #000;
+}
+
+.nested td {
+    text-align: center;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+td, th {
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+}
+
+
+
+tbody tr:nth-child(4) td:nth-child(1){
+    font-size: 130%;
+}
+
+
+/* vertical position */
+.up{
+    vertical-align: top;
+}
+
+.middle{
+    vertical-align: middle;
+}
+
+.down{
+    vertical-align: bottom;
+}
+
+/* horizontal position */
+.left{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+
+#beer {
+    text-align: right;
+    font-size: 30px;
+}

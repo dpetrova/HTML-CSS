@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {    
+    margin: 0 auto;     
+}
+
+header>div {
+    width: 900px;
+    height: 270px;
+    margin: 0 auto; 
+    background-image: url(../resources/headerBackground.jpg);
+    background-size: cover;  
+}
+
+header>div>h1 {
+    font: normal bold 28px Arial;
+    color: white;
+    float: right;
+    margin-top: 200px;
+    margin-right: 40px;
+}
+
+header>nav {
+    width: 900px;
+    height: 35px;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+    font: normal normal 15px Arial; 
+    color: #716f6e;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+header>nav ul {
+    margin: 0;    
+}
+
+header>nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 35px;
+    margin-left: -5px;
+    margin-top: 0;
+}
+
+header>nav ul li:hover {
+    background-color: #bbbbbb;
+    color: white;
+}
+
+header>nav ul li:first-of-type {
+    margin-left: -41px;
+}
+
+header>nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+aside {
+    width: 200px;
+    height: 650px;
+    float: right;
+    background-color: white;
+    margin-right: 180px;
+}
+
+aside >section {
+    width: 130px;
+    font: normal normal 11px Arial;
+    padding: 20px;
+    border: 1px solid #bababa;
+    border-radius: 10px;
+    margin: 15px 20px 0 0;
+}
+
+aside >section:first-of-type {
+    height: 190px;
+     background-color: #e0e0e0;
+}
+
+aside >section:last-of-type {
+    height: 320px;
+}
+
+h3 {
+    color: #7aba06;
+    font-size: 15px;
+    margin: 0;
+}
+
+aside p:first-of-type {
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+aside p:last-of-type {
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+    
+aside a {
+    color: #7aba06;
+}
+
+main {
+    width: 900px;   
+    margin: 0 auto;
+    background-color: white;
+    font: normal normal 11px Arial;
+    margin-top: -20px;
+    
+}
+
+main>section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #bababa;
+    border-radius: 10px;
+    width: 600px;    
+}
+
+figure {
+    float: left;
+    margin: 0;
+}
+
+main>section article {
+    height: 150px;
+}
+
+main>section article p, h5 {
+    font-size: 11px;
+    margin-left: 170px
+}
+
+footer {
+    width: 900px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #97ce34;
+    font: normal normal 11px Arial; 
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    margin-top: -20px;
+}
+
+footer a {
+    color: inherit;
+}

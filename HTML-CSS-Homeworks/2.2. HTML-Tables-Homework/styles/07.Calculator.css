@@ -1,0 +1,35 @@
+body {
+    font-family: Tahoma;
+    text-align: center;   
+}
+
+table, th, tr, td {
+    border: solid;
+    border-width: 1px;
+    border-color: #a7acb1;    
+}
+
+table td {
+    height: 90px;
+    width: 90px;   
+}
+
+th {
+    height: 80px;
+    width: 90px;   
+}
+
+button {
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    color: black;    
+}
+
+#display {
+        width: 98%;
+        height: 70px;
+        text-align: right;
+        font-size: 180%;
+    }
+

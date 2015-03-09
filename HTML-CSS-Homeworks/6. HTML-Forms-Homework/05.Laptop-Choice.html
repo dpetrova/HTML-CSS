@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Laptop Choice</title>
+    <link href="styles/05.Laptop-Choice.css" rel="stylesheet">
+</head>
+<body>
+  <div> 
+   <table>
+      <thead>
+         <tr>
+              <th colspan="3">LENOVO Laptops</th>
+         </tr>
+      </thead>
+       <tbody>
+        <tr>
+            <td>
+                <button onclick="window.open('https://www.technomarket.bg/products/09141249/lenovo-ideapad-flex-2-59431827');">
+                <span>LENOVO IDEAPAD FLEX 2 59431827</span><img src="images/ideapad_flex2.jpg" alt="IDEAPAD FLEX 2 59431827">
+                <span class="price">1,489.00 лв</span>
+                <span class="new">НОВО</span>
+                </button>
+            </td>
+            <td>
+                <button onclick="window.open('https://www.technomarket.bg/products/09141227/lenovo-yoga-3-pro-13-80he00lxbm');">
+                <span>ЛАПТОП LENOVO YOGA 3 PRO 13'' 80HE00LXBM</span><img src="images/yoga3_pro.jpg" alt="YOGA 3 PRO 13' 80HE00LXBM">
+                <span class="price">2,849.00 лв</span>
+                </button>
+            </td>
+            <td>
+                <button onclick="window.open('https://www.technomarket.bg/products/09131802/lenovo-ideapad-y510pa-59390545');">
+                <span>ЛАПТОП LENOVO IDEAPAD Y510PA 59390545</span><img src="images/IDEAPAD-Y510PA-59390545.jpg" alt="IDEAPAD Y510PA 59390545">
+                <span class="price">1,699.00 лв</span>
+                </button>
+            </td>           
+        </tr>
+        <tr>
+            <td>
+                <button onclick="window.open('https://www.technomarket.bg/products/09140553/lenovo-ideapad-g70-70-80hw0047bm');">
+                <span>ЛАПТОП LENOVO IDEAPAD G70-70 80HW0047BM</span><img src="images/IDEAPAD-G70-70-80HW0047BM.jpg" alt="IDEAPAD G70-70 80HW0047BM">
+                <span class="price">1,199.00 лв</span>
+                </button>
+            </td>
+            <td>
+                <button onclick="window.open('https://www.technomarket.bg/products/09138069/lenovo-ideapad-z710am-59434048');">
+                <span>ЛАПТОП LENOVO IDEAPAD Z710AM 59434048</span><img src="images/IDEAPAD-Z710AM-59434048.jpg" alt="IDEAPAD Z710AM 59434048">
+                <span class="price">1,849.00 лв</span>
+                </button>
+            </td>
+            <td>
+                <button onclick="window.open('https://www.technomarket.bg/products/09135378/lenovo-yoga-2-13-59412654');">
+                <span>ЛАПТОП LENOVO YOGA 2 13" 59412654</span><img src="images/IDEAPAD-Z710AM-59434048.jpg" alt="YOGA 2 13 59412654">
+                <span class="price">1,399.00 лв</span>
+                </button>
+            </td>           
+        </tr>
+    </tbody>
+    </table>
+    <div>
+        <label>Price</label>        
+        <input type="range" min="1000" max="3000" value="2000" step=50 
+                    onchange="document.getElementById('range').innerHTML = this.value + ' лв';" />
+        <span id="range"> </span>
+        <label>RAM</label>
+        <input type="range" min="2" max="8" value="4" step=2 
+                    onchange="document.getElementById('ram').innerHTML = this.value + ' GB';" />
+        <span id="ram"> </span>
+        <label>HDD</label>
+        <input type="range" min="500" max="2000" value="1000" step=500 
+                    onchange="document.getElementById('hdd').innerHTML = this.value + ' GB';" />
+        <span id="hdd"> </span>
+        <label>Display</label>
+        <input type="range" min="13.3" max="17.3" value="15.3" step=2 
+                    onchange="document.getElementById('disp').innerHTML = this.value + ' inch';" />
+        <span id="disp"> </span>
+        <label>Weight</label>
+        <input type="range" min="1.2" max="2.7" value="2.2" step=0.5 
+                    onchange="document.getElementById('kg').innerHTML = this.value + ' kg';" />
+        <span id="kg"> </span>
+        <label>Warranty</label>
+        <input type="range" min="12" max="60" value="36" step=12 
+                    onchange="document.getElementById('warr').innerHTML = this.value + ' months';" />
+        <span id="warr"> </span>        
+      </div>
+    </div>
+</body>
+</html>

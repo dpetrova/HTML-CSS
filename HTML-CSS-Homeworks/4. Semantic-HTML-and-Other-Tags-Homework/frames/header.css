@@ -1,0 +1,53 @@
+#header {
+    margin: 0;
+    padding: 0;
+    background:url(../images/star-wars-the-force-awakens-toys-toy-fair-2015.jpeg);
+    background-repeat: repeat;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: Stencil;
+    color: white;   
+}
+
+img {
+    width: 150px;
+    height: 100px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    display: inline;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 320px;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+form {
+    display: inline;
+    width: 250px;
+}
+
+#navigation {
+    margin-left: 150px;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix li {
+    display: inline;
+    margin: 80px;
+}
+
+

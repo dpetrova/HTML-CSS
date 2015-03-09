@@ -1,0 +1,44 @@
+div {
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-family: Stencil;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div ul li:nth-child(1):before {
+    content: url("../images/dv.png");    
+}
+
+div ul li:nth-child(2):before {
+    content: url("../images/cl.png");
+}
+
+div ul li:nth-child(3):before {
+    content: url("../images/ds.png");
+}
+
+div ul li:nth-child(4):before {
+    content: url("../images/r2.png");
+}
+
+div ul li:nth-child(5):before {
+    content: url("../images/yd.png");
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div ul li {
+    padding: 5px;
+}
