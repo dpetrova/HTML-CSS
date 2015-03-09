@@ -1,0 +1,403 @@
+@font-face {
+    font-family: "Robotics";
+    src: url(../fonts/SFTransRoboticsCondensed.ttf);
+}
+
+@font-face {
+	font-family: "Robotics";
+	src: url(../fonts/SFTransRoboticsCondensed.eot);
+}
+
+body {
+	background: url(../images/background.jpg);
+	background-attachment: fixed;
+}
+
+#content > div {
+    width:100%;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0px 5px 10px black;
+    overflow: hidden;
+    margin-top:0;
+    border-top:2px solid gray;
+}
+
+#content > div:hover {
+    background-color: rgba(255,255,255,1);
+}
+
+#main-navbar, .jumbotron, .navbar-brand {
+	font-family: Robotics;
+}
+
+.navbar {
+	box-shadow: 0px 7px 10px black;
+}
+
+#main-navbar {
+	font-size:16px;
+}
+
+#top-menu {
+	padding-left: 50px;
+}
+
+#top-menu li a {
+	color:lightgray;
+}
+
+#top-menu li a:hover:not(#login-btn) {
+	color:black;
+	background-color: white;
+}
+
+#login-btn {
+	
+}
+
+#login-btn:hover {
+	color: black;
+	background-color: orange;
+}
+
+.navbar-brand {
+	font-size:24px;
+}
+
+.jumbotron {
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+	height: 600px;
+    margin-bottom: 0;
+}
+
+.jumbotron>h1{
+	font-size: 32px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#content h2 {
+	font-size: 28px;
+	text-align: center;
+	padding-top: 0px;
+	font-family: Robotics;
+}
+
+#content > div:nth-child(even){
+	
+}
+
+#content > div:nth-child(odd){
+	
+}
+
+footer {
+	height:200px;
+	background-color: black;
+	margin-top:0;
+}
+
+footer > h2 {
+	font-size: 24px;
+	text-align: center;
+	padding-top: 10px;
+	font-family: Robotics;
+	color:lightgray;
+}
+
+
+#trainers-wrapper section {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0 40px 40px;
+    font-family: Robotics;
+    color: black;
+}
+
+#trainers-wrapper #ref {
+    width: 270px;
+    vertical-align: top;
+    margin: 10px 30px 10px 40px;
+    font-size: 1.2em;   
+}
+
+#trainers-wrapper a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#trainers-wrapper li {
+    list-style-type: none;
+    padding: 10px;    
+}
+.page-background {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background:url(../images/25525466-futuristic-shining-dark-blue-technology-printed-circuit-board-seamless-with-pattern-in-swatches.jpg);
+    background-repeat: repeat;
+    width: 94%;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+#contact-form-wrapper>#contact-form >input, textarea, button {
+    display: block;
+}
+#map-wrapper {
+    display: inline-block;
+}
+#map-canvas {
+    border-radius: 20px;
+    margin-top: 50px;
+    float:right;
+    margin-right: 200px;
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+}
+#university-address>p {
+    margin-top: -5px;
+}
+#contact-form-wrapper>#contact-form> button, textarea, input {
+    color: #000000;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+#contact-form-wrapper>#contact-form> button:hover {
+    background: #ffffff;
+    color: #000000;
+}
+#contact-form-wrapper>#contact-form> button {
+    background: #000000;
+    color: #ffffff;
+    height: 40px;
+    width: 100px;
+}
+#contact-form-wrapper {
+    margin-top: 50px;
+    font-family: Robotics;
+    color: #ffffff;
+    margin-left: 200px;
+    padding: 10px;
+    width: 400px;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#contact-form-wrapper:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+#find-us {
+    display: inline-block;
+}
+#contact-wrapper>#find-us {
+    display: inline-block;
+}
+#facebook {
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background: url("../images/sprites-transparent.png") repeat scroll -86px -9px transparent;
+    width: 55px;
+    height: 55px;
+}
+#twitter {
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background: url("../images/sprites-transparent.png") repeat scroll -8px -9px transparent;
+    width: 55px;
+    height: 55px;
+}
+#vimeo {
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background: url("../images/sprites-transparent.png") repeat scroll 142px -9px transparent;
+    width: 55px;
+    height: 55px;
+}
+
+#facebook:hover, #twitter:hover, #vimeo:hover {
+    background-color: white;
+}
+
+#softuniLogo {
+    padding-top: 60px;
+    padding-left: 30px;
+    width:300px;
+}
+#courses-level-wrapper>a {
+    text-decoration: none;
+    color: white;
+}
+hr {
+    color: white;
+}
+#courses-wrapper {
+    font-family: Robotics;
+}
+
+#courses-level-wrapper>a>button:hover {
+    background: white;
+    color: #000000;
+    cursor: pointer;
+}#article-wrapper {
+    padding-top: 100px;
+ }
+#courses-level-wrapper>a>button {
+    display: inline-block;
+    margin: 0;
+    border: #000000;
+    color: white;
+    vertical-align: middle;
+    width: 200px;
+    height: 50px;
+    background: #000000;
+}
+#courses-level-wrapper {
+    width: 850px;
+    margin: auto;
+}
+#courses {
+    width: 190px;
+    margin:50px auto 50px auto;
+    font-size: 35px;
+}
+.course {
+    width: 600px;
+    margin:80px auto 20px auto;
+    color:white;
+    background-color: white;
+    color:black;
+    border-radius: 15px;
+}
+.subject {
+    font-size: 18px;
+    display: block;
+    font-weight: bold;
+    margin:10px 0 10px 0;
+}
+#level-0, #level-1, #level-2, #level-3 {
+    background: orange;
+    color: #000000 !important;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 20px;
+}
+
+#courses-article-wrapper {
+    padding: 50px;
+}
+
+.course > article > p {
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:10px;
+    margin-top:15px;
+}
+
+#courses-wrapper header {
+    color:white;
+}
+#courses-article-wrapper article {
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 3px 3px black;
+}
+
+#video {
+    width: 480px;
+    height: 360px;
+    margin: 10px 0 20px 320px;
+}
+
+#login-wrapper section {
+    width: 700px;
+    margin-left: 380px;
+}
+
+#login-wrapper input {
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    display: table-cell;
+    vertical-align: top;
+    margin-top: 100px;
+}
+
+#login-wrapper {
+    border-top:none !important;
+}
+#ref>ul>#nakov-list-name>a:hover #nakov-article {
+    display: block;
+}
+#ref>ul>#peshev-list-name>a:hover #peshev-article {
+    display: block;
+}
+#ref>ul>#marinov-list-name>a:hover #marinov-article {
+    display: block;
+}
+#nakov-article {
+    background: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    width: 400px;
+    display: none;
+}
+#peshev-article {
+    background: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    width: 400px;
+    display: none;
+}
+#marinov-article {
+    background: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    width: 400px;
+    display: none;
+}
+#trainers-wrapper li>a {
+    color: #ffffff;
+}
+.validation-logo{
+    margin-right: 30px;
+    float: right;
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+}
+.validation-logo>a>img {
+    width: 70px;
+    height: 20px;
+}
+@media only screen and (max-width: 768px) {
+    #courses-level-wrapper > a > button {
+        display: block;
+        margin: auto;
+    }
+    #courses-level-wrapper {
+        width: 56%;
+    }
+    .course {
+        width: 80%;
+    }
+    #nakov-article, #peshev-article, #marinov-article {
+        left: -1%;
+    }
+    #contact-form-wrapper {
+        margin-left: 0;
+        width: 90%;
+    }
+    #map-canvas {
+        display: none;
+    }
+}

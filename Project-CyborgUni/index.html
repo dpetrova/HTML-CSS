@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>RobotUni</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/partners.css">
+
+	<script src="js/modernizr.js" type="text/javascript"></script>
+	<script src="js/menu-audio.js" type="text/javascript"></script>
+    <script src="scripts/audio.js" type="text/javascript"></script>
+     <script src="js/trainers-info.js" type="text/javascript"></script>
+     <script src="scripts/video.js" type="text/javascript"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map-canvas');
+            var mapOptions = {
+                center: new google.maps.LatLng(44.5403, -78.5463),
+                zoom: 8,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="main-navbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+		      	</button>
+      			<a class="navbar-brand" href="#" onmousedown="menuClickOne.play()"
+							onmouseover="menuClickTwo.play()">
+							RobotUNI
+				</a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="main-navbar">
+	      		<ul class="nav navbar-nav" id="top-menu">
+	      			<li>
+						<a href="#login-wrapper" id="login-btn" onmousedown="menuClickOne.play()" onmouseover="menuClickTwo.play()">
+								LOGIN
+						</a>
+					</li>
+	        		<li>
+						<a href="#" onmousedown="menuClickOne.play()"
+							onmouseover="menuClickTwo.play()">
+								HOME
+						</a>
+					</li>
+					<li>
+						<a href="#courses-wrapper" onmousedown="menuClickOne.play()"
+							onmouseover="menuClickTwo.play()">
+								COURSES
+						</a>
+					</li>
+					<li>
+						<a href="#trainers-wrapper" onmousedown="menuClickOne.play()"
+							onmouseover="menuClickTwo.play()">
+								TRAINERS
+						</a>
+					</li>
+					<li>
+						<a href="#partners-wrapper" onmousedown="menuClickOne.play()"
+							onmouseover="menuClickTwo.play()">
+								PARTNERS
+						</a>
+					</li>
+					<li>
+						<a href="#contact-wrapper" onmousedown="menuClickOne.play()"
+							onmouseover="menuClickTwo.play()">
+								CONTACT US
+						</a>
+					</li>
+	      		</ul>
+    		</div>
+  		</div>
+	</nav>
+
+	<div class="jumbotron">
+		<h1>FRONT SECTION</h1>
+	</div>
+
+	<main id="content" class="group" role="main">
+		<div id="login-wrapper">
+			<h2>LOGIN</h2>
+			 <header>
+                 <h2>Please, Identify Yourself!</h2>
+            </header>
+           <section id="video">
+                <video id="myVideo" width="480" height="360" preload="auto" >
+                    <source id="mp4source" src="video/retina_scan.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+               </video>
+               <input type="button" value="CHECK" onclick="videoControl()">
+            </section>
+
+		</div>
+
+		<div id="courses-wrapper">
+			<h2>COURSES</h2>
+			 <div class="page-background">
+                <div id="courses-box">
+                    <header id="courses">All Courses</header>
+                    <div id="courses-level-wrapper">
+                        <a href="#level-0"><button type="button">Level 0</button></a>
+                        <a href="#level-1"><button type="button">Level 1</button></a>
+                        <a href="#level-2"><button type="button">Level 2</button></a>
+                        <a href="#level-3"><button type="button">Level 3</button></a>
+                    </div>
+                    <div id="courses-article-wrapper">
+                        <div class="course">
+                            <article>
+                                <header id="level-0">Level 0</header>
+                                <p><span class="subject">Robotics fundamentals</span>
+                                    -In a world so mechanised comes the need for robot builders, but making robots is not that easy as it looks when you were a kid.If you wanna give robotics a try this is where you can prepare yourself or optionally run screaming.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="course">
+                            <article>
+                                <header id="level-1">Level 1</header>
+                                <p><span class="subject">Robot design basics</span>
+                                    -When you're making robots for customers usually(99.23%) they don't want their "toasters" look like toasters.This is the course where you learn to design beautiful "toasters", optionally human like.
+                                    <span class="subject">Mechanics basics</span>
+                                    -Someone said that robots making robots is perverse. So you have to learn to make robots from scratch or go home.This is the course where you learn how to not get killed when you get a hammer or touch a wire and ofc build a robot (the working ones are preferred).
+                                    <span class="subject">Robot structure basics</span>
+                                    -Building robots without knowing their structure is like cooking meals nobody will eat.So start learning robot structure. Then maybe at end of the course you'll know which is the head and which the leg and maybe what makes robots "alive".
+                                </p>
+                            </article>
+                        </div>
+                        <div class="course">
+                            <article>
+                                <header id="level-2">Level 2</header>
+                                <p><span class="subject">Artificial intelligence</span>
+                                    -Their came the day when we realised "bucket heads" are really stupid and talking with them is similar to talking with someone from the planet Painer, we created artificial intelligence. If you want bright future in robotics this course is the next step in your education.
+                                    <span class="subject">Robot control systems</span>
+                                    The robot control systems course will teach you how to make the software needed to manage and control the “toasters” you call robots. If you have expectations that your  so-called “robot” will be precise as a surgeon, you are completely wrong… At the end you will be happy if the movements of your so-called robot are even slightly similar to the movements of a zombie with Parkinson’s disease.
+                                    <span class="subject">Maintenance</span>
+                                    In this course is important for you to learn, how to properly maintain the scraps you’ve build. It’s important for us to teach you that when you couldn’t recognize the color of your machine under the rust, and when the agony of the machine is so big, that it wants to commit suicide, then it’s maybe time to drive him in the pit.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="course">
+                            <article>
+                                <header id="level-3">Level 3</header>
+                                <p><span class="subject">Nanotechnologies</span>
+                                    Nanotechnologies sounds very smart and complicated right? Well, it just sounds so… Actually your job will be to learn how to make the zinc oxide for all types of cosmetic products. After all you got to have plan B, in case you are no good at building robots!
+                                    <span class="subject"> Energy supply</span>
+                                    You’re not you when you’re hungry? So does robots, but a random guy who by chance gives you snickers won’t do the job. That’s why we are going to show you how to give your robots some ”nuts”!
+                                    <span class="subject">Bio-mechanical robotics</span>
+                                    Biomechanics is the study of the structure and function of biological systems such as humans, animals, plants, organs, and cells by means of the methods of mechanics. In this course we’ll explore two of the most physically active species on the planet (the sloth and the programmer) to learn how they put their bodies to the limit and beyond! After the course you’ll have the knowledge how to build the ultimate physical structure for your robots.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+		<div id="trainers-wrapper">
+			<h2>TRAINERS</h2>
+            <div class="page-background">
+       <section>
+            <iframe width="400" height="400" frameborder="no" src="images/alienware-wallpaper-cyborg-hd-wallpapers-wallpaper-alienware-cyborg-wallpapers-green-chrome-x-black-white-hd1.jpg" name="imgbox"></iframe>
+        </section>
+        <section id="ref">
+          <ul>
+            <li id="nakov-list-name">
+            <a href="images/svetlin-nakov1.jpg" target="imgbox" onmousedown="nakov.play()" onclick="saNakov()">
+                Svetlin Nakov
+                <div id="nakov-article">
+                    Svetlin Nakov has over 15 years of experience in the field of creating systems with artificial Intelligence, manager of many interplanetary system projects and classroom avatar manager creating both smart and sexy humanlike avatars which will replace the old and grumpy classroom teachers and increase school attendance and interest in education. Svetlin was guest speaker at hundreds of intergalactic conferences held on the planet Melmac, which have large attendance from the local Melmacians alongside with Alf. Also participate as a volunteer in the wars against the creatures of the galaxy  ”Painer” knows as “chalgarians”.
+                </div>
+            </a>
+            </li>
+            <li id="peshev-list-name">
+            <a href="images/peshev1.jpg" target="imgbox" onmousedown="peshev.play()" onclick="maPeshev()">
+                Mario Peshev
+                <div id="peshev-article">
+                    Mario is one of the best body parts mechanical and software developers. He deals with mechanical and software development of different body parts. Recently actively engaged with creating of artificial brains and livers for which the market is huge and his customers are mainly students, national assembly deputies and pop-folk performers. The future looks very bright for him!
+                </div>
+            </a>
+            </li>
+            <li id="marinov-list-name">
+            <a href="images/marian1.jpg" target="imgbox" onmousedown="marinov.play()" onclick="maMarinov()">
+                Marian Marinov
+                <div id="marinov-article">
+                    Marian graduated the “Primus University” on the planet Cybertron at the early age of 15. His university lecturer Optimus Prime said that with Marian on their side,  Magetron is going to look like a little girl. At the age of 16 Marian build a highly intelligent war robot, and won one of the most prestigious interplanetary competition. Several months after that, the project was terminated because the machine tried to kill him and almost succeed... Now Marian is developing the same robots which are planned to be the new lecturers in SoftUni....
+                </div>
+            </a>
+            </li>
+            <li>
+            <a href="images/mihail-stoinov2.jpg" target="imgbox" onmousedown="stoynov.play()">Mihail Stoinov</a>
+            </li>
+            <li>
+            <a href="images/vankov3.jpg" target="imgbox" onmousedown="gatakka.play()">Ivan Vankov - Gatakka</a>
+            </li>
+         </ul>
+        </section>
+        </div>
+		</div>
+
+		<div id="partners-wrapper">
+
+			<div class="container">
+        <div class="title">
+            <h2>Gold partners</h2>
+            <p>These are the gold partners. They act as a connection of the university to the Global Cyborg Mind. There are also privileged minority shareholders.</p>
+        </div>
+        <div class="boxA">
+            <div class="box margin-btm">
+                <img src="images/pic01.jpg" width="320" height="180" alt="" />
+                <div class="details">
+                    <p>The Cyborg Factory is the producer of the basic components for our brains. It is state licenced and assists the RobotUNI in substituting the human intelligence of students with the superior machine based one.</p>
+                </div>
+                <a href= "http://cyborgism.wix.com/cyborg" class="button">Cyborg Factory</a>
+            </div>
+        </div>
+        <div class="boxB">
+            <div class="box">
+                <img src="images/pic02.jpg" width="320" height="280" alt="" />
+                <div class="details">
+                    <p>The Cyborg Foundation is a voluntary organization where the biggest experts in cyborg technology participate. It counsels our university in achieving cyborg superiority. </p>
+                </div>
+                <a href="http://cyborgism.wix.com/cyborg" class="button">Cyborg Foundation</a>
+            </div>
+        </div>
+        <div class="boxC">
+            <div class="box">
+                <img src="images/pic03.jpg" width="320" height="200" alt="" />
+                <div class="details">
+                    <p>The Cyborgs is a union of cyborg coders.</p>
+                </div>
+                <a href="http://cyborgism.wix.com/cyborg" class="button">The Cyborgs</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="title">
+            <h3>Silver partners</h3>
+            <p>These are the silver partners. They act as a connection of the university to the Global Cyborg Business and Institutions.</p>
+        </div>
+        <div class="boxA">
+            <div class="box margin-btm">
+                <img src="images/pic4.jpg" width="320" height="180" alt="" />
+                <div class="details">
+                    <p>The Cyborg Gaming Society is an organization to promote coding skills for game building and supply all that is necessary for that.</p>
+                </div>
+                <a href="http://www.cyborggaming.com/strike7/" class="button">Cyborg Gaming Society</a>
+            </div>
+        </div>
+        <div class="boxB">
+            <div class="box">
+                <img src="images/pic05.jpg" width="320" height="280" alt="" />
+                <div class="details">
+                    <p>Cyborg industries is a company that produces special boosting codes for all the cyborgs globally. It strives to quick delivery and excellence in performance. </p>
+                </div>
+                <a href="http://www.cyborg.co/" class="button">Cyborg Industries</a>
+            </div>
+        </div>
+        <div class="boxC">
+            <div class="box">
+                <img src="images/pic06.jpg" width="320" height="200" alt="" />
+                <div class="details">
+                    <p>The Death Star is our spiritual leader. Named on its predecessors it acts as a focal point for our hopes for safe code compilation.</p>
+                </div>
+                <a href="http://en.wikipedia.org/wiki/Death_Star" class="button">The Death Star</a>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="container">
+            <div class="title">
+                <h4>Bronze partners</h4>
+                <p>These are the bronze partners. The act as a connection of the university to the Global flow of code.</p>
+            </div>
+            <div class="boxA">
+                <div class="box margin-btm">
+                    <img src="images/pic07.jpg" width="320" height="180" alt="" />
+                    <div class="details">
+                        <p>Jane is a professional coder in RoboC. She has a number of successful projects completed for the RoboGovernment.</p>
+                    </div>
+                    <a href="http://dc.wikia.com/wiki/Cyborg" class="button">Jane</a>
+                </div>
+                <div class="box">
+                    <img src="images/pic09.jpg" width="320" height="220" alt="" />
+                    <div class="details">
+                        <p>Ves is a professional coder in RoboJava. She programs for the RoboArmy.</p>
+                    </div>
+                    <a href="http://dc.wikia.com/wiki/Cyborg" class="button">Ves</a>
+                </div>
+            </div>
+            <div class="boxB">
+                <div class="box">
+                    <img src="images/pic08.jpg" width="320" height="280" alt="" />
+                    <div class="details">
+                        <p>Zeus is a dedicated cyborg net developer. He builds novel patterns for the RoboCulture Ministry.</p>
+                    </div>
+                    <a href="http://dc.wikia.com/wiki/Cyborg" class="button">Zeus</a>
+                </div>
+                <div class="box">
+                    <img src="images/pic10.jpg" width="320" height="140" alt="" />
+                    <div class="details">
+                        <p>The Dwarfs are little cyborg creatures specialized in emergency situations. They reboot your RoboWindows and then do what is necessary.</p>
+                    </div>
+                    <a href="http://dc.wikia.com/wiki/Cyborg" class="button">The Dwarfs</a>
+                </div>
+
+            </div>
+            <div class="boxC">
+                <div class="box">
+                    <img src="images/pic11.jpg" width="320" height="200" alt="" />
+                    <div class="details">
+                        <p>Prometheus is a cyborg genius awarded several times on international cyborg competitions in coding. He holds now a private academia in RoboC programming.</p>
+                    </div>
+                    <a href="http://dc.wikia.com/wiki/Cyborg" class="button">Prometheus</a>
+                </div>
+                <div class="box">
+                    <img src="images/pic12.jpg" width="320" height="200" alt="" />
+                    <div class="details">
+                        <p>Arthur is specialized in cyborg systems security.</p>
+                    </div>
+                    <a href="http://dc.wikia.com/wiki/Cyborg" class="button">Arthur</a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+		</div>
+
+		<div id="contact-wrapper">
+			<h2>CONTACT US</h2>
+			<div class="page-background">
+            <div id="contact-form-wrapper">
+                <form id="contact-form">
+                    <input id="about" type="text" name="about" placeholder="About" required="required"/>
+                    <input id="email" type="email" name="email" placeholder="Email" required="required"/>
+                    <p>If you want to contact a robot please leave your message here:</p>
+                    <textarea id="contentForRobot" class="content" name="contentForRobot" cols="30" rows="10" placeholder="Content"></textarea>
+                    <p>If the buckethead doesn't responds. We'll connect you to a human being. Leave you message here:</p>
+                    <textarea id="contentForHuman" class="content" name="contentForHuman" cols="30" rows="10" placeholder="Content" required="required" ></textarea>
+                    <button id="submit-button" type="submit" >Submit</button>
+                </form>
+                <div id="find-us">
+                    <h3>Find us</h3>
+                    <div id="university-address">
+                        <p><strong>Location: </strong>Planet Na'a Kov</p>
+                        <p><strong>Region: </strong>RoboBuilders lands</p>
+                        <p><strong>Working time: </strong>non-stop</p>
+                        <p><strong>Email: </strong>RoboUni@gmail.com</p>
+                    </div>
+                    <div id="social-links">
+                        <a href="https://facebook.com"><div id="facebook"></div></a>
+                        <a href="https://twitter.com"><div id="twitter"></div></a>
+                        <a href="https://vimeo.com"><div id="vimeo"></div></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="map-canvas"></div>
+            </div>
+		</div>
+
+	</main>
+
+	<footer>
+		<div id="softuniLogo">
+			<a href="https://softuni.bg/" target="_blank">
+				<img src="images/softuni-logo.png" alt="">
+			</a>
+		</div>
+		<div class="validation-logo">
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Frobotuni.cloudvps.bg%2F&profile=css3&usermedium=all&warning=1&vextwarning=&lang=en">
+                <img src="images/vcss-blue.gif"
+                     alt="Valid CSS!" />
+            </a>
+        </div>
+        <div class="validation-logo">
+            <a href="http://validator.w3.org/check?uri=http%3A%2F%2Frobotuni.cloudvps.bg%2F&charset=%28detect+automatically%29&doctype=Inline&group=0">
+                <img src="images/W3C_HTML5_certified.png"
+                     alt="Valid HTML!"/>
+            </a>
+        </div>
+	</footer>
+
+</body>
+</html>
